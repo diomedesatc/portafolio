@@ -1,0 +1,87 @@
+
+.main-info{
+  background-color: #EBF4F6;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-info-items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  text-align: center ;
+}
+
+.title{
+  text-align: center;
+}
+
+.tecnologias-items{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 500px;
+  min-width: 700px;
+  
+
+}
+.tecnologias-items ul {
+  display: flex;  
+  justify-content: space-around;
+  justify-items: center;
+  flex-wrap: wrap;
+  width: 700px;
+
+}
+
+.tecnologias-items ul li{
+  text-transform: uppercase;
+  list-style: none;
+  border: 3px solid #37B7C3;
+  border-radius: 5px;
+  background-color: #37B7C3;  
+  margin: 10px;
+  color: white;
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+
+.tecnologia-icon:hover{
+  background-color:#EBF4F6;
+  color: black;
+
+}
+
+.experiencia-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #EBF4F6;
+  height: 500px;
+}
+
+.experiencia-container p{
+  width: 500px;
+  text-align: center;
+}
+
+.estudios-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.estudios-items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 400px;
+}
