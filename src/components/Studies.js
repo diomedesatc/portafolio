@@ -69,7 +69,7 @@ const Studies = () => {
       <Box sx={{ p: 2 }}>
         <Stack direction="row" justifyContent="space-between" alignItems="center">
           <Typography gutterBottom variant="h5" component="div">
-            Ingles
+            Ingles por inmersion
           </Typography>
         </Stack>
         
