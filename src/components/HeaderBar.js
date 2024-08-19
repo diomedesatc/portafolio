@@ -11,16 +11,16 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import AdbIcon from '@mui/icons-material/Adb';  
 
-const pages = ['Acerca de mi', 'Tecnologias', 'Experiencia', 'Estudios'];
+const pages = ['Acerca de mi', 'Proyectos'];
 const settings = ['GitHub', 'LinkedIn'];
 
 const HeaderBar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-    const handleOpenNavMenu = (event) => {
+    const handleOpenNavMenu = (event) => {    
         setAnchorElNav(event.currentTarget);
     };
     const handleOpenUserMenu = (event) => {
@@ -43,7 +43,7 @@ const HeaderBar = () => {
                 variant="h6"
                 noWrap
                 component="a"
-                href="#"
+                href="/"
                 sx={{
                 mr: 2,
                 display: { xs: 'none', md: 'flex' },
@@ -86,11 +86,12 @@ const HeaderBar = () => {
                     display: { xs: 'block', md: 'none' },
                 }}
                 >
-                {pages.map((page) => (
-                    <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
-                    </MenuItem>
-                ))}
+                <MenuItem>
+                    <Typography textAlign="center" href="/">Acerca de mi</Typography>
+                </MenuItem>
+                <MenuItem> 
+                    <Typography textAlign="center">Proyectos</Typography>
+                </MenuItem>
                 </Menu>
             </Box>
             <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
@@ -113,15 +114,25 @@ const HeaderBar = () => {
                 DATC
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                {pages.map((page) => (
                 <Button
-                    key={page}
+                    key="001"
                     onClick={handleCloseNavMenu}
                     sx={{ my: 2, color: 'white', display: 'block' }}
+                    href='/'
+                    
                 >
-                    {page}
+                    Acerca de mi
                 </Button>
-                ))}
+                <Button
+                    key="002"
+                    onClick={handleCloseNavMenu}
+                    sx={{ my: 2, color: 'white', display: 'block' }}
+                    href='/projects'
+                    
+                >
+                    Proyectos
+                </Button>
+                
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
