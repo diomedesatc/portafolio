@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';  
 
-const pages = ['Acerca de mi', 'Proyectos'];
+
 const settings = ['GitHub', 'LinkedIn'];
 
 const HeaderBar = () => {
